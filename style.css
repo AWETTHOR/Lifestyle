@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --primary-color:#008000 ;
+    --secondary-color:#fff;
+    --headings-color:#303537;
+    --paragraph-color:#333;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-family:  "Inter", sans-serif;
+}
+
+
+h1, h2, h3, h4{
+    color: var(--headings-color);
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+p{
+    font-size: 1.6rem;
+    color: var(--paragraph-color);
+    font-weight: 300;
+}
+
+a{
+    display: inline-block;
+    color: var(--paragraph-color);
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+small{
+    font-size: 1.6rem;
+    display: inline-block;
+    color: var(--primary-color);
+}
+
+ul{
+    list-style: none;
+}
+
+li {
+    font-size: 1.6rem;
+}
+
+i{
+    font-size: 2rem;
+    color: var(--headings-color);
+}
+
+/* ============== COMPONENTS ==============*/
+.toggle-container {
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.89);
+    display: none;
+}
+
+/*  Start of javascript */
+.toggle-container.toggleContainer{
+    display: block;
+}
+
+
+.toggle-container .toggle-content-container #closeBtn {
+    display: block;
+}
+
+
+/* End of javascript */
+ 
+.toggle-container .toggle-content-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+}
+
+.toggle-container .toggle-content-container #closeBtn{
+    position: absolute;
+    top: 30px;
+    right: 45px;
+    color: var(--secondary-color);
+    font-size: 4rem;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.toggle-container .toggle-content-container #closeBtn:hover {
+    color: var(--primary-color);
+}
+
+
+.toggle-container .toggle-content-container .toggle-list-container {
+    display: flex; 
+    flex-direction: column;
+    gap: 1.7rem;
+    margin-top: 10rem;
+}
+
+
+.toggle-container .toggle-content-container .toggle-list-container a {
+    font-size: 2.4rem;
+    color: var(--secondary-color);
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.toggle-container .toggle-content-container .toggle-list-container a:hover {
+    color: #1c59dc;
+}
+
+/* ================= SECTIONS  =================*/
+/* ====== HEADER SECTION ======*/
+.header-main-container {
+    background: url(images/hero-image-watch\ \(1\).jpg) center center/ cover no-repeat;
+    height: 150vh;
+}
+
+.header-main-container .header-content {
+    background-color: rgba(0, 128, 0, 0.9);
+    padding: 2rem 4rem;
+    height: 100%;
+}
+
+.header-main-container .header-content-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-main-container .header-content .hurmberger-icon i {
+    color: var(--secondary-color);
+    font-size: 5rem;
+}
+
+.header-main-container .header-content .logo-section img{
+    display: inline-block;
+}
+
+.header-main-container .header-content .admin-search {
+    display: flex;
+    gap: 2rem;
+}
+
+.header-main-container .header-content .admin-search i {
+    color: var(--secondary-color);
+}
+
+/* hero section */
+.header-main-container  .hero-section-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+.header-main-container  .hero-section-container .hero-section-content .hero-section-status{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.header-main-container  .hero-section-container .hero-section-content .hero-section-status h1 {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-size: 6rem;
+    text-align: center;
+}
+
+.header-main-container  .hero-section-container .hero-section-content .hero-section-status a {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    padding: 1.5rem 3rem;
+    border-radius: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.header-main-container  .hero-section-container .hero-section-content .dots {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.header-main-container  .hero-section-container .hero-section-content .dots .dot {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+}
+
+/* ============ MAIN SECTION  ============*/
+.main-container {
+    margin-top: 7rem;
+}
+
+.main-container .main-container-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 4rem;
+}
+
+.main-container .main-container-content .walk-on-beach {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+
+.main-container .main-container-content .walk-on-beach h2  {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+
+.main-container .main-container-content .walk-on-beach p {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+
+.main-container .main-container-content .walk-on-beach a {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    padding: 1.3rem 3rem;
+    border-radius: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.main-container .main-container-content .walk-on-beach a:hover {
+    background-color: var(--primary-color);
+}
+
+.main-container .main-container-content .walk-on-beach .beach-1 {
+    margin-right: 6rem;
+}
+
+.main-container .main-container-content .walk-on-beach .beach-2 {
+    grid-column:1/2 ;
+    grid-row: 1 /2;
+    margin-left: 6rem;
+}
+
+.main-container .main-container-content .walk-on-beach .beach-3 {
+    margin-right: 6rem;
+} 
+
+.main-container .main-container-content .walk-on-beach .beach-4 {
+    grid-column:1/2 ;
+    grid-row: 1/ 2;
+    margin-left: 6rem;
+}
+
+.main-container .main-container-content .walk-on-beach .beach-5 {
+    margin-right: 6rem;
+} 
+
+.main-container .main-container-content .walk-on-beach img {
+    max-width: 680px;
+    width: 100%;
+    display: inline-block;
+}
+
+/* ============ FOOTER SECTION  ============*/
+
+.footer-main-container {
+    margin-top: 8rem;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.footer-main-container .footer-main-content {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-main-container .footer-main-content .footer-list-container  {
+    margin-top: 5rem;
+    display: flex;
+    gap: 5rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 4rem;
+}
+
+.footer-main-container .footer-main-content .footer-list-container .list-item {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.footer-main-container .footer-main-content .footer-list-container .list-item i {
+    color: var(--secondary-color);
+}
+
+
+.footer-main-container .footer-main-content .footer-list-container .list-item .list-item-status  {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-main-container .footer-main-content .footer-list-container .list-item .list-item-status strong {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--secondary-color);
+}
+
+
+.footer-main-container .footer-main-content .footer-list-container .list-item .list-item-status a {
+    color: #ddd;
+}
+
+.footer-main-container .footer-main-content .list-socail-icon {
+    margin-top: 4rem;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 10rem;
+}
+
+
+.footer-main-container .footer-main-content .list-socail-icon a {
+    color: var(--secondary-color);
+    border: 1px solid #ddd;
+    padding: 1.2rem;
+}
+
+
+
+
+.footer-main-container .footer-main-content .list-socail-icon i {
+    font-size: 3rem;
+    color: var(--secondary-color);
+}
+
+
+.footer-main-container .footer-main-content p {
+    color: var(--secondary-color);
+    text-align: center;
+}

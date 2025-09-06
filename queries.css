@@ -1,0 +1,122 @@
+/* LG  SMALL LAPTOPS: 1024px-1280px*/
+
+@media (max-width:75rem) {
+    /* 1180px / 16 = 75rem */
+    /* 9px / 16px = 56.25 */
+    html {
+        font-size: 56.25%;
+    }
+
+    .header-main-container  .hero-section-container .hero-section-content .dots {
+        margin-top: 6rem;
+    }
+}
+
+
+/* MD  TABLETS: 768 px-1024px */
+
+@media (max-width:62rem) {
+    /* 986px / 16 = 62rem */
+    /* 8px / 16px = 50 */
+    html {
+        font-size: 50%;
+    }
+
+    .header-main-container  {
+        height: 120vh;
+    }
+
+
+    .footer-main-container {
+        height: 90vh;
+    }
+
+    .header-main-container  .hero-section-container .hero-section-content .dots {
+        margin-top: 5rem;
+    }
+}
+
+/* SM  PHONE LANDSCAPE:  576px-768px */
+
+@media (max-width:55rem) {
+    /* 885px / 16 = 55rem */
+    /* 7px / 16px = 44 */
+    html {
+        font-size: 44%;
+    }
+
+
+    .main-container .main-container-content .walk-on-beach {
+        grid-template-columns: 1fr;
+    }
+
+    .main-container .main-container-content .walk-on-beach .beach-1 {
+        margin-left: 4rem;
+    }
+
+    .main-container .main-container-content .walk-on-beach .beach-2 {
+        grid-column:auto;
+        grid-row: auto;
+        margin-left: 3rem;
+    }
+
+    .main-container .main-container-content .walk-on-beach .beach-3 {
+        margin-left: 3rem;
+    }
+
+    .main-container .main-container-content .walk-on-beach .beach-4 {
+        grid-column:auto;
+        grid-row: auto;
+        margin-left: 3rem;
+    }
+
+    .main-container .main-container-content .walk-on-beach .beach-5 {
+        margin-left: 3rem;
+    }
+
+
+    /* hide the search icon and admin */
+    
+    .header-main-container .header-content .admin-search {
+        display: none;
+    }
+
+    .footer-main-container {
+        height: 80vh;
+    }
+
+      .header-main-container  .hero-section-container .hero-section-content .dots {
+        margin-top: 4.5rem;
+    }
+}
+
+/* XS  PHONE PORTRAIT:  480px-576px */
+
+@media (max-width:28rem) {
+    /* 480px / 16 = 30rem */
+    /* 8px / 16px = 38*/
+    html {
+        font-size: 38%;
+    }
+
+
+    .main-container {
+        margin-top: 6rem;
+    }
+
+      .header-main-container  {
+        height: 50vh;
+    }
+
+    .header-main-container .header-content .logo-section img{
+        width: 50px;
+    }
+
+    .footer-main-container .footer-main-content .footer-list-container {
+        gap: 3rem;
+    }
+
+    .footer-main-container {
+        height: 70vh;
+    }
+}
